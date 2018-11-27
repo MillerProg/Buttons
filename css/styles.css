@@ -94,13 +94,13 @@
     width: 120px;
     height: 120px;
     opacity: 0.6;
-    border: 2px solid #9966cc;
+    border: 2px solid #6666cc;
 }
 .button2-round {
     margin: 36px;
     width: 80px;
     height: 80px;    
-    background-color: #9966cc;
+    background-color: #6666cc;
     animation: b2color 3s infinite linear;
 }
 .button2-phone:hover {
@@ -115,7 +115,7 @@
     margin: 61px;
     width: 30px;
     height: 30px;
-    background-color: #9966cc;
+    background-color: #6666cc;
     animation: b2rotation 3s infinite linear;
 }
 @keyframes b2swing {
@@ -123,15 +123,15 @@
     30%,50%,75%,100% {transform: translateX(-7px);}
 }
 @keyframes b2color {
-    20% {background-color: #660099;}
-    60% {background-color: #9966cc;}
-    80% {background-color: #cc66ff;}
+    20% {background-color: #333399;}
+    60% {background-color: #6666cc;}
+    80% {background-color: #ccccff;}
 }
 @keyframes b2rotation {
     from {transform: rotate(0deg) translate(-61px) rotate(0deg);}
-    20% {background-color: #660099;}
-    60% {background-color: #9966cc;}
-    80% {background-color: #cc66ff;}
+    20% {background-color: #333399;}
+    60% {background-color: #6666cc;}
+    80% {background-color: #ccccff;}
 	to {transform: rotate(360deg) translate(-61px) rotate(-360deg);
 	}
 }
