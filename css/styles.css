@@ -30,6 +30,9 @@ width: 200px;
 	color: #fff;
 	margin: 10px;
 }
+.sign:hover {
+	opacity: 0.8;
+}
 /*Button1*/
 .button1__wrapper {
     margin: 18px auto;
