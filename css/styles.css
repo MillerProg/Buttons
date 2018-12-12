@@ -22,7 +22,13 @@
 .content_blue {
     background-color: #6699cc;
 }
-
+.sign {
+width: 200px;
+	height: 60px;
+	border: none;
+	background: #336699;
+	color: #fff;
+}
 /*Button1*/
 .button1__wrapper {
     margin: 18px auto;
