@@ -6,50 +6,10 @@
 		<title>Buttons</title>
 		<link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/normalize.css">
-		<script src="cadesplugin_api.js"></script>		
 	</head>
 	<body class="page-body">	
         <div class="wrapper">
             <div class="content content_white">
-		    
-		    <button class="sign" onclick="run()">Проверить работу с ЭЦП</button>
-		    <input type="text" id="CertName">		    
-		    <input type="text" id="Message">
-		    <p id="DataToSignTxtBox"></p>
-		    <p id="PlugInEnabledTxt"></p>
-            </div>
-            <div class="content content_white">
-            </div>
-            <div class="content content_white">
-            </div>
-            <div class="content content_white">
-            </div>
-            <div class="content content_lightblue">
-            </div>
-            <div class="content content_lightblue">
-            </div>
-            <div class="content content_lightblue">
-            </div>
-            <div class="content content_lightblue">
-            </div>
-            <div class="content content_lightblue">
-            </div>
-            <div class="content content_lightblue">
-            </div>
-            <div class="content content_blue">
-            </div>
-            <div class="content content_blue">
-            </div>
-            <div class="content content_blue">
-            </div>
-            <div class="content content_blue">
-            </div>
-            <div class="content content_blue">
-            </div>
-            <div class="content content_blue">
-            </div>
-		
-		<div class="content content_white">
                 <div class="button1__wrapper">
                     <div class="button1 button1__first-line"></div> 
                     <div class="button1 button1__second-line"></div>                   
@@ -71,39 +31,42 @@
                     <div class="button2 button2-round-mini"></div>
                 </div>
             </div>
-        </div> 
+            <div class="content content_white">
+            </div>
+            <div class="content content_white">
+            </div>
+            <div class="content content_white">
+            </div>
+            <div class="content content_white">
+            </div>
+            <div class="content content_lightblue">
+            </div>
+            <div class="content content_lightblue">
+            </div>
+            <div class="content content_lightblue">
+            </div>
+            <div class="content content_lightblue">
+            </div>
+            <div class="content content_lightblue">
+            </div>
+            <div class="content content_lightblue">
+            </div>
+            <div class="content content_blue">
+            </div>
+            <div class="content content_blue">
+            </div>
+            <div class="content content_blue">
+            </div>
+            <div class="content content_blue">
+            </div>
+            <div class="content content_blue">
+            </div>
+            <div class="content content_blue">
+            </div>
+        </div>
 		
-		<script>
-var txtDataToSign = "Hello World";
-                                        document.getElementById("DataToSignTxtBox").innerHTML = txtDataToSign;
-                                        var canPromise = !!window.Promise;
-                                        if(isEdge()) {
-                                            ShowEdgeNotSupported();
-                                        } else {
-                                            if (canPromise) {
-                                                cadesplugin.then(function() {
-                                                        Common_CheckForPlugIn();
-                                                        Common_CreateSimpleSign();
-                                                    },
-                                                    function(error) {
-                                                        document.getElementById('PluginEnabledImg').setAttribute("src", "Img/red_dot.png");
-                                                        document.getElementById('PlugInEnabledTxt').innerHTML = error;
-                                                    }
-                                                );
-                                            } else {
-                                                window.addEventListener("message", function(event) {
-                                                        if (event.data == "cadesplugin_loaded") {
-                                                            CheckForPlugIn_NPAPI('isPlugInEnabled');
-                                                            CreateSimpleSign_NPAPI();
-                                                        } else if (event.data == "cadesplugin_load_error") {
-                                                            document.getElementById('PluginEnabledImg').setAttribute("src", "Img/red_dot.png");
-                                                            document.getElementById('PlugInEnabledTxt').innerHTML = "Плагин не загружен";
-                                                        }
-                                                    },
-                                                    false);
-                                                window.postMessage("cadesplugin_echo_request", "*");
-                                            }
-                                        }
-		</script>
+		 
+		
+		
 	</body>
 </html>
